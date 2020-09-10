@@ -1,7 +1,7 @@
 //FS - File System
 
-//const fs = require('fs');
-/*
+const fs = require('fs');
+
  //criar de arquivo
 	//+ open()
 		fs.open('texto.txt','w', function(erro, file){
@@ -94,7 +94,6 @@
 		});
 	});
 
-*/
 
 
 
