@@ -1,0 +1,18 @@
+<% include ("layout/cabecalho") %>
+<h1><%= cabecalho %></h1>
+<table border="1">
+	<tr>
+		<th>Nome</th>
+		<th>Email</th>
+		<th>Ações</th>
+	</tr>
+<% for (var i=0; i < contacts.length; i++) { %>
+	<tr>
+		<td><%= contacts[i].nome %></td>
+		<td><%= contacts[i].email %></td>
+		<td><a href="/contatos/atualiza/<%= i %>">Atualiza</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/contatos/deleta/<%= i %>">Deleta</a></td>
+	</tr>
+<% }; %>
+</table>
+<p><a href="/contatos/novo">Novo contato</a></p>
+<% include ("layout/rodape") %>

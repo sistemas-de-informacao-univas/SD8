@@ -1,0 +1,9 @@
+<% include ("layout/cabecalho") %>
+<h1>Novo contato</h1>
+<form action="/contatos/atualiza" method="POST">
+<input type="hidden" name="id" value="<%= contacts == null ? "" : id %>">
+<p>Nome: <input type="text" name="nome" value="<%= contacts == null ? "" : contacts[id].nome %>" ></p>
+<p>Email: <input type="text" name="email" value="<%= contacts == null ? "" : contacts[id].email %>"></p>
+<input type="submit" value="OK">
+</form>
+<% include ("layout/rodape") %>
